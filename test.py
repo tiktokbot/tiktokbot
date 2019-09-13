@@ -54,4 +54,11 @@ payload = {
     "as": "a1qwert123",
     "cp": "cbfhckdckkde1"
 }
-print(requests.post("https://api21-h2.tiktokv.com/aweme/v1", data=json.dumps(payload), headers=headers).content)
+
+API_URL = "https://api2.musical.ly/passport/user/login/"
+params = {
+    "mix_mode": "1",
+    "username": "",
+    "email": "",}
+
+print(requests.post(API_URL, data=json.dumps(payload), headers=headers).content)
